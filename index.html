@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Estilos HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Color de fondo */
+            color: #333; /* Color de texto */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #0044cc; /* Color de fondo */
+            color: #fff; /* Color de texto */
+            text-align: center; /* Centrar texto */
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            margin: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff; /* Color de fondo */
+        }
+
+        p {
+            color: #555; /* Color de texto */
+            text-align: justify; /* Justificar texto */
+            line-height: 1.6;
+        }
+
+        a {
+            color: #0066cc; /* Color de texto */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto; /* Centrar imagen */
+            border: 5px solid #ddd; /* Borde alrededor de la imagen */
+            border-radius: 8px; /* Bordes redondeados */
+        }
+
+        ul, ol {
+            color: #444; /* Color de texto */
+            background-color: #f9f9f9; /* Color de fondo */
+            padding: 10px;
+            border-radius: 5px; /* Bordes redondeados */
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left; /* Alinear texto a la izquierda por defecto */
+        }
+
+        th {
+            background-color: #0044cc; /* Color de fondo */
+            color: #fff; /* Color de texto */
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2; /* Color de fondo alternado */
+        }
+
+        form {
+            background-color: #fff; /* Color de fondo */
+            padding: 20px;
+            border-radius: 8px; /* Bordes redondeados */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra alrededor del formulario */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333; /* Color de texto */
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px; /* Bordes redondeados */
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #0044cc; /* Color de fondo */
+            color: #fff; /* Color de texto */
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0033aa; /* Color de fondo al pasar el ratón */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ejemplo de Estilos HTML</h1>
+    </header>
+    <div class="container">
+        <h2>Texto de Ejemplo</h2>
+        <p>
+            Este es un párrafo de ejemplo. Aquí se aplica la justificación del texto para que se alinee a ambos lados del contenedor. Esto hace que el texto se vea más uniforme y ordenado.
+        </p>
+
+        <h2>Enlaces</h2>
+        <p>
+            Visita <a href="https://www.ejemplo.com">este enlace</a> para más información.
+        </p>
+
+        <h2>Imagen</h2>
+        <img src="https://images.unsplash.com/photo-1593642532973-d31b6557c2c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMzA0MjF8MHwxfGFsbHwxfHx8fHx8fHwxNjg1MTY1NDk&ixlib=rb-1.2.1&q=80&w=800" alt="Imagen de Paisaje">
+
+        <h2>Listas</h2>
+        <ul>
+            <li>Elemento de lista no ordenada 1</li>
+            <li>Elemento de lista no ordenada 2</li>
+            <li>Elemento de lista no ordenada 3</li>
+        </ul>
+
+        <h2>Tablas</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Encabezado 1</th>
+                    <th>Encabezado 2</th>
+                    <th>Encabezado 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dato 1</td>
+                    <td>Dato 2</td>
+                    <td>Dato 3</td>
+                </tr>
+                <tr>
+                    <td>Dato 4</td>
+                    <td>Dato 5</td>
+                    <td>Dato 6</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Formulario</h2>
+        <form action="#">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <label for="options">Opciones:</label>
+            <select id="options" name="options">
+                <option value="option1">Opción 1</option>
+                <option value="option2">Opción 2</option>
+                <option value="option3">Opción 3</option>
+            </select>
+            
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>
